@@ -1,0 +1,37 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "yt2mp3@waldemar.b",
+      "strict_min_version": "45.0a1"
+    }
+  },
+  "permissions": [
+		"tabs",
+		"contextMenus"
+	],
+   "background": {
+      "scripts": [ "scripts/background.js" ]
+   },
+   "content_scripts": [
+	  {
+		"matches": ["*://*.ytmp3.cc/*"],
+		"js": ["scripts/mp3mod.js"],
+		"run_at": "document_end"
+	  }
+	],
+	"page_action": {
+      "default_icon": "icons/md_5ab8bcd4bd3ab.png",
+      "default_title": "__MSG_extensionAction__",
+	  "show_matches": ["*://*.youtube.com/watch?*"],
+	  "default_popup": "popup.html"
+   },
+   "web_accessible_resources": ["icons/loading.png"],
+   "description": "__MSG_extensionDescription__",
+   "manifest_version": 2,
+   "default_locale": "en",
+   "name": "__MSG_extensionName__",
+   "version": "1.5.1",
+	"icons": {
+      "48": "icons/md_5ab8bcd4bd3ab.png"
+   }
+}

@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "YouTube MP3"
+  },
+  "extensionDescription": {
+    "message": "Pobieraj filmy z YouTube w formacie mp3."
+  },
+  "extensionAction": {
+    "message": "Pobierz MP3"
+  },
+  "openInNewTab": {
+    "message": "Otwórz w nowej karcie"
+  }
+}
